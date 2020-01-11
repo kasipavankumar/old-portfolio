@@ -63,14 +63,6 @@ main {
     padding: 1em;
 }
 
-#project-grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
 #project-grid a {
     color: black;
     text-decoration: none;
@@ -87,13 +79,16 @@ main {
 }
 
 .project-tile {
+    background-color: #f2da63;
     padding: 1em;
     text-align: center;
-    height: auto;
-    width: 40vw;
-    border: 1px solid #f2da63;
     border-radius: 3px;
     margin: 5px 5px 5px 5px;
+    transition: ease-out 0.2s;
+}
+
+.project-tile:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
 }
 
 #contact {
@@ -156,6 +151,11 @@ Ref: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
     #nav-links {
         display: none;
     }
+
+    #project-grid img {
+        height: auto;
+        width: 80vw;
+    }
 }
 
 @media (max-width: 425px) {
@@ -166,6 +166,11 @@ Ref: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
     #welcome-section {
         font-size: 0.9em;
     }
+
+    #project-grid img {
+        height: auto;
+        width: 80vw;
+    }
 }
 
 @media (max-width: 350px) {
@@ -175,5 +180,10 @@ Ref: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
 
     #welcome-section {
         font-size: 0.8em;
+    }
+
+    #project-grid img {
+        height: auto;
+        width: 80vw;
     }
 }
