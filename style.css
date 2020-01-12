@@ -134,6 +134,7 @@ main {
 }
 
 #scroll-top-btn {
+    display: none;
     font-family: inherit;
     border: none;
     outline: none;

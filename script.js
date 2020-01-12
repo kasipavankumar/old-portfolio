@@ -1,5 +1,6 @@
 const scrollButton = document.getElementById("scroll-top-btn");
 
+// On scrolling, the button will be displayed
 window.onscroll = () => {
     scrollToTop()
 };
