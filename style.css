@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Space+Mono&display=swap");
+@font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    src: url('assets/fonts/Space_Mono/SpaceMono.ttf') format('truetype');
+    font-display: swap;
+}
 
 html {
     scroll-behavior: smooth;
