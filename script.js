@@ -1,4 +1,5 @@
 const scrollButton = document.getElementById("scroll-top-btn");
+const navBar = document.getElementById("navbar");
 
 // On scrolling, the button will be displayed
 window.onscroll = () => {
@@ -12,8 +13,10 @@ const scrollToTop = () => {
         document.documentElement.scrollTop > 20
     ) {
         scrollButton.style.display = "block";
+        navBar.classList.add("elevate-navbar");
     } else {
         scrollButton.style.display = "none";
+        navBar.classList.remove("elevate-navbar");
     }
 };
 
