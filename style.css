@@ -12,11 +12,15 @@ html {
 body {
     font-family: "Space Mono", sans-serif;
     margin: 0;
-    scroll-behavior: smooth;
 }
 
 main {
     margin-top: 70px;
+}
+
+#title a {
+    text-decoration: none;
+    color: black;
 }
 
 #navbar {
@@ -55,6 +59,10 @@ main {
 #welcome-section {
     background-color: #f2da63;
     height: 100vh;
+}
+
+#location-icon {
+    margin-right: 15px;
 }
 
 .elevate-navbar {
@@ -120,8 +128,8 @@ main {
 }
 
 .project-tile:hover {
-    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
-			0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2),
+        0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
 }
 
 #contact {
@@ -132,6 +140,7 @@ main {
 .social img {
     height: 28px;
     width: 28px;
+    padding: 0.3rem;
 }
 
 .social a {
@@ -184,11 +193,11 @@ Ref: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
 }
 
 ::-webkit-scrollbar-track {
-    background: lightgray;
+    background: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: gray;
+    background: #7278f2;
     border-radius: 30px;
 }
 
