@@ -1,0 +1,10 @@
+// Mixins SCSS
+
+// Flex
+@mixin flex($direction, $justify, $align, $wrap) {
+    display: flex;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

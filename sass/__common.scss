@@ -1,0 +1,43 @@
+@import "./_variables";
+@import "./_mixins";
+
+/// Links
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+/// Flex
+.flex {
+    @include flex(null, center, center, null);
+}
+
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
+}
+
+/// Custom highlight color when text is selected.
+::selection {
+    background-color: $secondaryColor;
+    color: black;
+}
+
+/// Custom Scroll Bar
+/// Ref: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: lightgray;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $secondaryColor;
+    border-radius: 30px;
+}
