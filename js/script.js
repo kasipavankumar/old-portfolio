@@ -53,10 +53,15 @@ const projectGrid = document.getElementById("project-grid");
 /**
  * Fetch project details from ../data/projects.json
  */
-fetch("/portfolio/data/projects.json", {
+
+const projectDataURL =
+    window.location.protocol === "http:"
+        ? "../data/projects.json"
+        : "/portfolio/data/projects.json";
+
+fetch(projectDataURL, {
     headers: {
         "Content-Type": "application/json",
-        "Accept": "application/json"
     }
 })
     .then(response => response.json())
