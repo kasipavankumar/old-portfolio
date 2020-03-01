@@ -1,3 +1,8 @@
+/**
+ * D. Kasi Pavan Kumar
+ * © 2020
+ */
+
 const scrollButton = document.getElementById("scroll-top-btn");
 const navBar = document.getElementById("navbar");
 
@@ -26,3 +31,44 @@ const setScrollState = () => {
     document.documentElement.scrollTop = 0;
     window.location.hash = "";
 };
+
+/**
+ * Generate project cards.
+ */
+const generateProjectCard = (name, link, webpImageSource, pngImageSource) => {
+    const projectCard = `<picture>
+            <source type="image/webp" srcset="${webpImageSource}">
+            <source type="image/png" srcset="${pngImageSource}">
+            <img src="${pngImageSource}" loading="lazy" alt="${name}">
+        </picture>
+        <a rel="noopener" href="${link}" target="_blank">
+            <p>${name} &#8599;</p>
+        </a>`;
+
+    return projectCard;
+};
+
+const projectGrid = document.getElementById("project-grid");
+
+/**
+ * Fetch project details from ../data/projects.json
+ */
+fetch("../data/projects.json")
+    .then(response => response.json())
+    .then(data => {
+        const { projects } = data;
+        projects.forEach(project => {
+            const { name, link, webpImageSource, pngImageSource } = project;
+            const projectTileDiv = document.createElement("div");
+
+            projectTileDiv.className = "project-tile";
+            projectTileDiv.innerHTML = generateProjectCard(
+                name,
+                link,
+                webpImageSource,
+                pngImageSource
+            );
+
+            projectGrid.appendChild(projectTileDiv);
+        });
+    });

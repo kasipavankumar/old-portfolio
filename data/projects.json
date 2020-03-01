@@ -1,0 +1,52 @@
+{
+    "projects": [
+        {
+            "name": "Tribute Page: Mahatma Gandhi",
+            "link": "https://code-plus-coffee.github.io/tribute",
+            "webpImageSource": "assets/projects/webp/tribute.webp",
+            "pngImageSource": "assets/projects/tribute.png"
+        },
+        {
+            "name": "Product Landing Page",
+            "link": "https://code-plus-coffee.github.io/product-landing",
+            "webpImageSource": "assets/projects/webp/product-landing.webp",
+            "pngImageSource": "assets/projects/product-landing.png"
+        },
+        {
+            "name": "Python Documentation",
+            "link": "https://code-plus-coffee.github.io/python-docs",
+            "webpImageSource": "assets/projects/webp/python-docs.webp",
+            "pngImageSource": "assets/projects/python-docs.png"
+        },
+        {
+            "name": "Robofriends",
+            "link": "https://code-plus-coffee.github.io/robofriends",
+            "webpImageSource": "assets/projects/webp/robofriends.webp",
+            "pngImageSource": "assets/projects/robofriends.png"
+        },
+        {
+            "name": "Gradient Generator",
+            "link": "https://code-plus-coffee.github.io/gradientgen",
+            "webpImageSource": "assets/projects/webp/gradient_generator.webp",
+            "pngImageSource": "assets/projects/gradient_generator.png"
+        },
+        {
+            "name": "WebP Converter",
+            "link": "https://github.com/code-plus-coffee/webp-conv",
+            "webpImageSource": "assets/projects/webp/webp_convert.webp",
+            "pngImageSource": "assets/projects/webp_convert.gif"
+        },
+        {
+            "name": "Terna | NSS Blood Donation Camp Registration Form",
+            "link": "https://ternabd2020.web.app",
+            "webpImageSource": "assets/projects/webp/ternabd2020.webp",
+            "pngImageSource": "assets/projects/ternabd2020.png"
+        },
+        {
+            "name": "AI Face Detection",
+            "link": "https://facedbrain.web.app",
+            "webpImageSource": "assets/projects/webp/face-detection.webp",
+            "pngImageSource": "assets/projects/face-detection.png"
+        }
+    ]
+}
