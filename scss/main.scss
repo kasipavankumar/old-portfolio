@@ -1,0 +1,121 @@
+/* 
+* D. Kasi Pavan Kumar
+* © 2020
+*/
+
+@import "./mixins";
+@import "./common";
+@import "./fonts";
+@import "./variables";
+
+@import "./navbar";
+@import "./welcome_section";
+@import "./project_section";
+@import "./project_grid";
+@import "./presence_section";
+@import "./scroll_to_button";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Space Mono", sans-serif;
+    margin: 0;
+}
+
+main {
+    margin-top: 70px;
+}
+
+@media (min-width: 570px) {
+    #project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 570px) {
+    #navbar {
+        justify-content: center;
+        padding: 0.5em;
+    }
+
+    #nav-links {
+        display: none;
+    }
+
+    #project-grid {
+        grid-template-columns: repeat(1, 1fr);
+
+        img {
+            height: auto;
+            width: 80vw;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    #navbar,
+    #welcome-section,
+    #projects,
+    #contact {
+        font-size: 4vw;
+    }
+
+    #project-grid {
+        img {
+            height: auto;
+            width: 80vw;
+        }
+    }
+
+    .social {
+        img {
+            height: 6vh;
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    #navbar,
+    #welcome-section,
+    #projects,
+    #contact {
+        font-size: 4vw;
+    }
+
+    .social {
+        img {
+            height: 5vh;
+            width: auto;
+        }
+    }
+}
+
+@media (max-width: 240px) {
+    #title {
+        font-size: 7vw;
+    }
+
+    #welcome-section,
+    #projects,
+    #contact {
+        font-size: 5vw;
+    }
+
+    #projects {
+        padding: 7px;
+
+        #project-grid {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+    }
+
+    .social {
+        img {
+            height: 4.3vh;
+            width: auto;
+        }
+    }
+}

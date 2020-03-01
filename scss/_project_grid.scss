@@ -1,0 +1,41 @@
+// Project grid styles.
+
+@import "./variables";
+@import "./common";
+@import "./mixins";
+
+#project-grid {
+    a {
+        @extend .links;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+#project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+    justify-content: center;
+
+    img {
+        border-radius: 2px;
+        height: auto;
+        width: 100%;
+    }
+}
+
+.project-tile {
+    @include flex(column, center, center, null);
+    background-color: $primaryColor;
+    padding: 1em;
+    text-align: center;
+    border-radius: 2px;
+    transition: box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        box-shadow: $box-shadow;
+    }
+}

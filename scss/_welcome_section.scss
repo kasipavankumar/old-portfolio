@@ -1,0 +1,21 @@
+// Welcome section styles.
+
+@import "./variables";
+@import "./common";
+
+#welcome-section {
+    background-color: $primaryColor;
+    height: 100vh;
+
+    a {
+        @extend .links;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    #location-icon {
+        margin-right: 15px;
+    }
+}

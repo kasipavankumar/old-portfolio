@@ -1,0 +1,13 @@
+// Projects header styles.
+
+@import "./variables";
+
+#projects {
+    background-color: $secondaryColor;
+    height: fit-content;
+    padding: 1em;
+
+    #project-header {
+        text-align: center;
+    }
+}

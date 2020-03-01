@@ -1,0 +1,24 @@
+// Presence section styles.
+
+@import "./variables";
+
+#contact {
+    padding: 0.5em;
+    background-color: $primaryColor;
+}
+
+.social {
+    img {
+        height: 5vh;
+        width: auto;
+        padding: 0.3em;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

@@ -1,12 +1,17 @@
-@import "./_variables";
-@import "./_common";
+// Navbar styles.
 
-#title a {
-    text-decoration: none;
-    color: black;
+@import "./variables";
+@import "./common";
+@import "./mixins";
+
+#title {
+    a {
+        @extend .links;
+    }
 }
 
 #navbar {
+    @include flex(row, null, center, wrap);
     background-color: $primaryColor;
     font-weight: 600;
     position: fixed;
@@ -14,10 +19,6 @@
     width: 100%;
     height: 70px;
     padding: 0.6em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
     letter-spacing: 0.75px;
     overflow: hidden;
 }
@@ -27,18 +28,16 @@
     margin-left: auto;
     padding-right: 15px;
     list-style-type: none;
-}
+    a {
+        @extend .links;
+        padding: 0.5em;
 
-#nav-links a {
-    @extend .links;
-    padding: 0.5em;
-}
-
-#nav-links a:hover {
-    text-decoration: overline;
+        &:hover {
+            text-decoration: overline;
+        }
+    }
 }
 
 .elevate-navbar {
-    // box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
     box-shadow: $box-shadow;
 }
