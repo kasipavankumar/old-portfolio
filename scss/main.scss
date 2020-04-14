@@ -3,6 +3,8 @@
 * © 2020
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
 @import "./mixins";
 @import "./common";
 @import "./fonts";
@@ -15,12 +17,17 @@
 @import "./presence_section";
 @import "./scroll_to_button";
 
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Space Mono", sans-serif;
+    font-family: "Source Code Pro", "Space Mono", sans-serif;
     margin: 0;
 }
 
@@ -68,13 +75,6 @@ main {
             width: 80vw;
         }
     }
-
-    .social {
-        img {
-            height: 6vh;
-            width: auto;
-        }
-    }
 }
 
 @media (max-width: 350px) {
@@ -87,7 +87,7 @@ main {
 
     .social {
         img {
-            height: 5vh;
+            height: 1.7rem;
             width: auto;
         }
     }
@@ -114,7 +114,7 @@ main {
 
     .social {
         img {
-            height: 4.3vh;
+            height: 1.5rem;
             width: auto;
         }
     }

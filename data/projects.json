@@ -47,6 +47,12 @@
             "link": "https://facedbrain.web.app",
             "webpImageSource": "assets/projects/webp/face-detection.webp",
             "pngImageSource": "assets/projects/face-detection.png"
+        },
+        {
+            "name": "Discuss Boards",
+            "link": "https://discuss-boards.herokuapp.com",
+            "webpImageSource": "assets/projects/webp/discuss-boards.webp",
+            "pngImageSource": "assets/projects/discuss-boards.png"
         }
     ]
 }

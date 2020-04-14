@@ -12,6 +12,12 @@
             text-decoration: underline;
         }
     }
+
+    .project-tile {
+        &--title {
+            font-weight: 600;
+        }
+    }
 }
 
 #project-grid {

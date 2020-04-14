@@ -36,13 +36,13 @@ const setScrollState = () => {
  * Generate project cards.
  */
 const generateProjectCard = (name, link, webpImageSource, pngImageSource) => {
-    const projectCard = `<picture>
+    const projectCard = `<picture class="project-tile__images">
             <source type="image/webp" srcset="${webpImageSource}">
             <source type="image/png" srcset="${pngImageSource}">
             <img src="${pngImageSource}" loading="lazy" alt="${name}">
         </picture>
         <a rel="noopener" href="${link}" target="_blank">
-            <p>${name} &#8599;</p>
+            <p class="project-tile--title">${name} &#8599;</p>
         </a>`;
 
     return projectCard;

@@ -3,6 +3,7 @@
 * D. Kasi Pavan Kumar
 * © 2020
 */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 .links, #title a, #nav-links a, #welcome-section a, #project-grid a {
   text-decoration: none;
   color: black;
@@ -303,6 +304,10 @@
   text-decoration: underline;
 }
 
+#project-grid .project-tile--title {
+  font-weight: 600;
+}
+
 #project-grid {
   display: -ms-grid;
   display: grid;
@@ -355,7 +360,7 @@
 }
 
 .social img {
-  height: 5vh;
+  height: 2rem;
   width: auto;
   padding: 0.3em;
 }
@@ -385,12 +390,17 @@
   opacity: 0.7;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Space Mono", sans-serif;
+  font-family: "Source Code Pro", "Space Mono", sans-serif;
   margin: 0;
 }
 
@@ -436,10 +446,6 @@ main {
     height: auto;
     width: 80vw;
   }
-  .social img {
-    height: 6vh;
-    width: auto;
-  }
 }
 
 @media (max-width: 350px) {
@@ -450,7 +456,7 @@ main {
     font-size: 4vw;
   }
   .social img {
-    height: 5vh;
+    height: 1.7rem;
     width: auto;
   }
 }
@@ -472,7 +478,7 @@ main {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .social img {
-    height: 4.3vh;
+    height: 1.5rem;
     width: auto;
   }
 }
